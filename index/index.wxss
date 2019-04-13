@@ -1,0 +1,44 @@
+.circle-range-select-wrapper{
+  position:relative;
+  max-width:100%;
+  width:220px;
+  height:220px;
+  margin:60px auto 30rpx auto;
+  border-radius:50%;
+  border:4px solid #ccc;
+  padding:0 !important;
+  cursor:default;
+}
+.circle-bg{
+  position: absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width:200px;
+  height:200px;
+}
+.circle-range-select-wrapper .selected-range{
+  position:absolute;
+  left:50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index:2;
+  color:#0ff;
+}
+.circle-range-select-wrapper .values{
+  position:absolute;
+  z-index:2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top:-.5em;
+  width:100%;
+  text-align:center;
+}
+.values-line{
+  padding: 0 15rpx;
+}

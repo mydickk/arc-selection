@@ -1,0 +1,23 @@
+
+<!--记录睡眠时间-->
+<view class="circle-range-select-wrapper" id="circleWrapper">
+  <canvas 
+    style="width: {{canvasSize}}px; height: {{canvasSize}}px;" 
+    class='selected-range'
+    bindtouchstart="bindtouchstart"
+    bindtouchmove="bindtouchmove"
+    bindtouchend='bindtouchend'
+    canvas-id="canvas">
+  </canvas>
+
+  <view class="values">
+    <cover-view class="value1">
+      <cover-view>{{value.handle1}}</cover-view>
+    </cover-view>
+    <cover-view class='values-line'>——</cover-view> 
+    <cover-view class="value2">
+      <cover-view>{{value.handle2}}</cover-view>
+    </cover-view>
+  </view>
+
+</view>
